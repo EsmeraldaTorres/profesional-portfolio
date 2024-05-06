@@ -653,6 +653,10 @@ p {
   margin-top: 1.25rem;
 }
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 3rem;
 }
 .contact-form h5 {

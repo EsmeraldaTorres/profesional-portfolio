@@ -62,3 +62,4 @@ window.addEventListener("scroll", hideName);
 //         point[i].classList.add('active')
 //     })
 // })
+Tally.loadEmbeds();
