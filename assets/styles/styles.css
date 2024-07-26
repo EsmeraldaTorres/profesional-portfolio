@@ -521,7 +521,7 @@ p {
   box-shadow: none !important;
   margin: 30px 15px;
   background-size: cover;
-  width: 50vw;
+  width: 90vw;
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -865,6 +865,9 @@ footer {
   }
   .col-md-12 {
     width: 100%;
+  }
+  .carousel-item .card {
+    width: 70vh;
   }
 }
 @media (min-width: 992px) {
