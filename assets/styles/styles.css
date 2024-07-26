@@ -74,8 +74,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(
+      rgba(5, 7, 12, 0.308),
+      rgba(5, 7, 12, 0.335)
+    ),
+    url("../imag/pexels-arina-krasnikova-5712527.jpg");
+
+  /* url("../imag/pexels-pixabay-247791.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
 }
-video {
+.principal-image {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
@@ -434,7 +445,6 @@ p {
   height: 60vh;
   background: url("../imag/work2gether.jpg");
   background-size: cover;
-  /* background-attachment:; */
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
