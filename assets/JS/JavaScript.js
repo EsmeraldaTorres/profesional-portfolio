@@ -70,11 +70,3 @@ document
     // window.location.href = "files/Esmeralda_Torres_Aguirre_CV.pdf";
     window.open("files/Esmeralda_Torres_Aguirre_CV.pdf", "_blank");
   });
-
-// Detectar si es un dispositivo iOS
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-// Si es un dispositivo iOS, cambiar el background-attachment a scroll
-if (isIOS) {
-  document.querySelector(".hire-me").style.backgroundAttachment = "initial";
-}

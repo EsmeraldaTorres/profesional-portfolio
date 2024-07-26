@@ -297,8 +297,7 @@
     </div>
 
   </section>
-  <section class="hire-me">
-    </div>
+  <section id="hire-me" class="hire-me">
     <div 
      class="container2">
       <div class="box">
@@ -311,7 +310,6 @@
         </div> 
         <!-- <button class="cursor-pointer" id="downloadButton">Descargar PDF</button> -->
       </div>
-    </div>
     </div>
   </section>
   <section class="works" id="works">
@@ -555,7 +553,7 @@
   <footer class="display-flex">
     © 2021 Portfolio Esmeralda Torres Aguirre | All right reserverd.
   </footer>
-<script src="assets/JS/JavaScript.js"></script>
+<script src="assets/JS/JavaScript.js" defer></script>
     <!-- boostrp -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -572,5 +570,20 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Detectar si es un dispositivo iOS
+          const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+          // Si es un dispositivo iOS, cambiar el background-attachment a scroll
+          if (!isIOS) {
+              const elements = document.getElementsByClassName("hire-me");
+              for (let i = 0; i < elements.length; i++) {
+                  elements[i].style.backgroundAttachment = "fixed";
+              }
+          }
+      });
+      
+  </script>
 </body>
 </html>
