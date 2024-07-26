@@ -63,3 +63,10 @@ window.addEventListener("scroll", hideName);
 //     })
 // })
 Tally.loadEmbeds();
+
+document
+  .getElementById("downloadButton")
+  .addEventListener("click", function () {
+    // window.location.href = "files/Esmeralda_Torres_Aguirre_CV.pdf";
+    window.open("files/Esmeralda_Torres_Aguirre_CV.pdf", "_blank");
+  });
